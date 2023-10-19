@@ -1,0 +1,131 @@
+@font-face {
+    font-family: Abril;
+    src: url(/fonts/AbrilFatface-Regular.ttf);
+  }
+@font-face {
+    font-family: Poppins;
+    src: url(/fonts/Poppins-Regular.ttf);
+  }
+html{
+    scroll-behavior: smooth;
+  }
+  
+  body{
+    background-color: #d9d9d9;
+    font-size: 18px;
+    color: #0d0d0d;
+    line-height: 1.15;
+    margin: 0;
+    padding: 0;
+  }
+
+img {
+    border: 5px solid #557373;
+    width: 90vw;
+    display: block;
+    margin: auto;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+h1, h2, h3 {
+    font-family: Abril;
+}
+h1 {
+    text-align: center;
+    font-size: 50px;
+    line-height: 1;
+    margin-top: 16px;
+}
+h2 {
+    font-size: 32px;
+    padding-left: 16px;
+    line-height: 1.5;
+}
+h3 {
+    font-size: 24px;
+    padding-left: 16px;
+}
+p {
+    font-family: Poppins;
+    font-size: 18px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+span {
+    font-family: Poppins;
+}
+
+li {
+    font-family: Poppins;
+}
+figcaption {
+    font-family: Poppins;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+ul {
+    padding-left: 30px;
+}
+ol {
+    padding-left: 30px;
+}
+
+nav li{
+    display:inline;
+    margin: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 20px;
+  }
+
+nav a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none; 
+  }
+nav a:hover {
+    background-color: #557373;
+    padding: 13px;
+}
+
+nav a:active {
+    background-color: #557373;
+    padding: 13px;
+}
+  
+ nav{
+    background-color: #000000;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+a#skip {
+    background: white;
+    color: black;
+    font-family: Poppins;
+    left: 0;
+    padding: 6px;
+     -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    position: absolute;
+    top: -40px;
+}
+
+a#skip:focus {
+    top: 20px;
+}
+
+main#main {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    gap: 15px;
+}
+
+main#main div {
+    grid-column: 1/-1;
+}
