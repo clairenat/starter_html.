@@ -29,7 +29,7 @@ img {
 }
 
 h1, h2, h3 {
-    font-family:Abril;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 h1 {
     text-align: center;
@@ -48,24 +48,24 @@ h3 {
     padding-left: 16px;
 }
 p {
-    font-family: Poppins;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
     padding-left: 16px;
     padding-right: 16px;
 }
 
 span {
-    font-family: Poppins;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: block;
     margin-left: 16px;
     margin-top: 10px;
 }
 
 li {
-    font-family: Poppins;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 figcaption {
-    font-family: Poppins;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 16px;
     margin-right: 16px;
 }
@@ -84,8 +84,8 @@ ol {
 nav li{
     display:inline;
     margin: 15px;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
     font-size: 20px;
   }
 
