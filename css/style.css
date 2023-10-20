@@ -168,3 +168,35 @@ main#main div {
       opacity: 1;
     }
   }
+
+.gallery {
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 3fr 0.5fr;
+    gap: 5px;
+    grid-template-rows: 2fr 2fr;
+}
+
+.firstchild {
+    grid-column: 2;
+    grid-row: 1;
+    width: 100%;
+    height: 50vw;
+}
+.secondchild {
+    grid-column: 3;
+    grid-row: 1;
+    width: 100%;
+    height: 50vw;
+}
+.thirdchild {
+    grid-column: 2;
+    grid-row: 2;
+    width: 100%;
+    height: 50vw;
+}
+.fourthchild {
+    grid-column: 3;
+    grid-row: 2;
+    width: 100%;
+    height: 50vw;
+}
