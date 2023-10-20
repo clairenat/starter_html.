@@ -36,6 +36,7 @@ h1 {
     font-size: 50px;
     line-height: 1;
     margin-top: 16px;
+    animation: header 2s ease infinite;
 }
 h2 {
     font-size: 32px;
@@ -129,3 +130,31 @@ main#main {
 main#main div {
     grid-column: 1/-1;
 }
+
+@media screen and (prefers-reduced-motion: reduce){
+    html{
+        scroll-behavior: auto; /* Removes scroll animation */
+    }
+    img.gif {
+        display: none;
+    }
+    h1 {
+        text-align: center;
+        font-size: 50px;
+        line-height: 1;
+        margin-top: 16px;
+        animation: none;
+    }
+}
+
+@keyframes header {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
