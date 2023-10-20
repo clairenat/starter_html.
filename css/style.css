@@ -58,6 +58,7 @@ span {
     font-family: Poppins;
     display: block;
     margin-left: 16px;
+    margin-top: 10px;
 }
 
 li {
@@ -71,9 +72,13 @@ figcaption {
 
 ul {
     padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 ol {
     padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 nav li{
