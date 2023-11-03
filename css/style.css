@@ -140,13 +140,18 @@ main#main {
 main#main div {
     grid-column: 1/-1;
 }
-
+#nongif {
+    display: none;
+}
 @media screen and (prefers-reduced-motion: reduce){
     html{
         scroll-behavior: auto; /* Removes scroll animation */
     }
-    img.gif {
+    #gif {
         display: none;
+    }
+    #nongif {
+        display: block;
     }
     h1 {
         text-align: center;
@@ -307,6 +312,7 @@ main#main div {
         width: 40vw;
         height: 40vw;
         row-gap: 0px;
+        margin-top: -20px;
     }
     .fourthchild {
         grid-column: 3;
@@ -314,6 +320,7 @@ main#main div {
         width: 40vw;
         height: 40vw;
         row-gap: 0px;
+        margin-top: -20px;
     }
 
     .recipegallery {
@@ -351,7 +358,7 @@ main#main div {
     /*#shown {display: inline}*/
 
    button {
-        margin-top: 20px;
+        margin-top: 10px;
         margin-left: 40px;
         text-align: center;
         padding: 15px;
@@ -375,14 +382,14 @@ main#main div {
 
     .headgrid {
         display: grid;
-        grid-template-columns: 2fr 1fr 2fr;
+        grid-template-columns: 2fr 4fr;
         grid-template-rows: 2fr 2fr;
         gap: 15px;
     }
     .headimage {
-        grid-column: 2 / span 3;
-        height: 45vw;
-        width: 45vw;
+        grid-column: 2;
+        height: 80vw;
+        width: 60vw;
         grid-row: 1 / span 2;
     }
     .headp {
@@ -397,6 +404,45 @@ main#main div {
         grid-row: 2;
         text-align: left;
         font-size: 14px;
-        margin-top: -60px;
+        margin-top: -20px;
+    }
+    .recipeheadgrid {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        grid-template-rows: 2fr;
+        margin-top: 10px;
+    }
+    .headimagerecipe {
+        grid-column: 2;
+        grid-row: 1;
+        height: 50vw;
+        width: 50vw;
+    }
+    .headprecipe {
+        text-align: left;
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .gridheading {
+        grid-column: 1 / span 2;
+        text-align: left;
+    }
+    @media screen and (prefers-reduced-motion: reduce){
+        html{
+            scroll-behavior: auto; /* Removes scroll animation */
+        }
+        #gif {
+            display: none;
+        }
+        #nongif {
+            display: block;
+        }
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            line-height: 1;
+            margin-top: 16px;
+            animation: none;
+        }
     }
 }   
