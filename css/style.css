@@ -172,8 +172,9 @@ main#main div {
 .gallery {
     display: grid;
     grid-template-columns: 0.5fr 3fr 3fr 0.5fr;
-    gap: 5px;
     grid-template-rows: 2fr 2fr;
+    gap: 5px;
+    row-gap: 0px;
 }
 
 .firstchild {
@@ -181,22 +182,221 @@ main#main div {
     grid-row: 1;
     width: 100%;
     height: 50vw;
+    row-gap: 0px;
 }
 .secondchild {
     grid-column: 3;
     grid-row: 1;
     width: 100%;
     height: 50vw;
+    row-gap: 0px;
 }
 .thirdchild {
     grid-column: 2;
     grid-row: 2;
     width: 100%;
     height: 50vw;
+    row-gap: 0px;
 }
 .fourthchild {
     grid-column: 3;
     grid-row: 2;
     width: 100%;
     height: 50vw;
+    row-gap: 0px;
 }
+
+.fifthchild {
+    grid-column: 2;
+    grid-row: 3;
+    width: 100%;
+    height: 50vw;
+    row-gap: 0px;
+}
+
+@media screen and (min-width: 768px){
+    nav li{
+        display:inline;
+        margin: 90px;
+        margin-left: 90px;
+        margin-right: 90px;
+        font-size: 20px;
+      }
+      h1 {
+        text-align: center;
+        font-size: 50px;
+        line-height: 1;
+        margin-top: 16px;
+        animation: header 2s ease infinite;
+    }
+    h2 {
+        font-size: 32px;
+        padding-left: 40px;
+        line-height: 1.5;
+    }
+    h3 {
+        font-size: 24px;
+        padding-left: 40px;
+    }
+    p {
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 18px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    span {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: block;
+        margin-left: 40px;
+        margin-top: 20px;
+    }
+    
+    li {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    figcaption {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    
+    ul {
+        padding-left: 60px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    ol {
+        padding-left: 60px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    ul.navigation {
+        padding-left: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: 0.5fr 3fr 3fr 0.5fr;
+        grid-template-rows: 2fr 2fr;
+        gap: 0px;
+        row-gap: 0px;
+        padding-right: 40px;
+    }
+    
+    .firstchild {
+        grid-column: 2;
+        grid-row: 1;
+        width: 40vw;
+        height: 40vw;
+        row-gap: 0px;
+    }
+    .secondchild {
+        grid-column: 3;
+        grid-row: 1;
+        width: 40vw;
+        height: 40vw;
+        row-gap: 0px;
+    }
+    .thirdchild {
+        grid-column: 2;
+        grid-row: 2;
+        width: 40vw;
+        height: 40vw;
+        row-gap: 0px;
+    }
+    .fourthchild {
+        grid-column: 3;
+        grid-row: 2;
+        width: 40vw;
+        height: 40vw;
+        row-gap: 0px;
+    }
+
+    .recipegallery {
+        display: grid;
+        grid-template-columns: 0.5fr 2fr 2fr 2fr 0.5fr;
+        grid-template-rows: 2fr;
+        gap: 0px; 
+    }
+    .recipefirstchild {
+        grid-column: 2;
+        grid-row: 1;
+        width: 30vw;
+        height: 30vw;
+        row-gap: 0px;
+    }
+    .recipesecondchild {
+        grid-column: 3;
+        grid-row: 1;
+        width: 30vw;
+        height: 30vw;
+        row-gap: 0px;
+    }
+    .recipethirdchild {
+        grid-column: 4;
+        grid-row: 1;
+        width: 30vw;
+        height: 30vw;
+    }
+    #more {display: none;}
+    #more2 {display: none;}
+    #more3 {display: none;}
+    #more4 {display: none;}
+    #more5 {display: none;}
+    #more6 {display: none;}
+    /*#shown {display: inline}*/
+
+   button {
+        margin-top: 20px;
+        margin-left: 40px;
+        text-align: center;
+        padding: 15px;
+        padding-right: 30px;
+        padding-left: 30px;
+        text-align: center;
+        color: #d9d9d9;
+        background-color: #557373;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    main#main {
+        display: grid;
+        grid-template-columns: 1fr 5fr 1fr;
+        gap: 15px;
+    }
+    
+    main#main div {
+        grid-column: 1/-1;
+    }
+
+    .headgrid {
+        display: grid;
+        grid-template-columns: 2fr 1fr 2fr;
+        grid-template-rows: 2fr 2fr;
+        gap: 15px;
+    }
+    .headimage {
+        grid-column: 2 / span 3;
+        height: 45vw;
+        width: 45vw;
+        grid-row: 1 / span 2;
+    }
+    .headp {
+        grid-column: 1;
+        text-align: left;
+        grid-row: 1;
+        font-size: 14px;
+        margin-bottom: -20px;
+    }
+    .headp2 {
+        grid-column: 1;
+        grid-row: 2;
+        text-align: left;
+        font-size: 14px;
+        margin-top: -60px;
+    }
+}   

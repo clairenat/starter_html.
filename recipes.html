@@ -12,7 +12,7 @@
 <body>
     <a href = "#main" id = "skip">Skip to Main Content</a>
         <nav>
-            <ul>
+            <ul class="navigation">
                 <li><a href="index.html"> Pets</a></li>
                 <li><a href="travel.html"> Travel</a></li>
                 <li><a href="recipes.html" class="active"> Recipes</a></li>
@@ -29,6 +29,9 @@
 
         <img src="recipes1/images/Matcha-Cookies.jpeg" width = "400" alt="">
         <p>These cookies have the perfect flavor balance of the earthiness from the matcha and the sweetness and creaminess from the white chocolate chips. They are crispy and sweet, perfect for an afternoon snack or dessert. Enjoy with a cup of tea!</p>
+        <span id="shown"></span>
+
+        <div id="more">
         <h2>Recipe Ingredients</h2>
         <ul>
             <li>All Purpose Flour</li>
@@ -58,10 +61,13 @@
         </ol>
 
         <h3>Additional Food images</h3>
-        <img src="recipes1/images/Cookies-on-tray.jpeg" width = "200" alt="Close up of matcha cookies on baking tray">
-        <img src="recipes1/images/Matcha-and-flour.jpeg" width = "200" alt="Matcha and flour sifted into a bowl">
-        <img src="recipes1/images/cookie-dough.jpeg" width = "200" alt="Raw matcha cookie dough shaped into a cylinder">
-
+        <div class="recipegallery">
+        <img src="recipes1/images/Cookies-on-tray.jpeg" width = "200" class ="recipefirstchild" alt="Close up of matcha cookies on baking tray">
+        <img src="recipes1/images/Matcha-and-flour.jpeg" width = "200" class = "recipesecondchild" alt="Matcha and flour sifted into a bowl">
+        <img src="recipes1/images/cookie-dough.jpeg" width = "200" class = "recipethirdchild" id="recipesthird" alt="Raw matcha cookie dough shaped into a cylinder">
+        </div>
+        </div>
+        <button onclick="myFunction()" id="MyButton">Read more</button>
         <!-- Emily Ma -->
 
     </div>
@@ -73,6 +79,9 @@
 
         <img src="shrimpscampi.jpg" width = "400" alt="Shrimp and noodles.">
         <p>Shrimp scampi is a classic Italian-American delight, where succulent shrimp meet a medley of garlic, butter, and white wine. Sautéed to pink perfection, the shrimp mingle with a fragrant blend of garlic and red pepper flakes. A drizzle of white wine and a squeeze of lemon create a luxurious sauce, embracing the dish's linguine base. With a sprinkle of parsley, it's a harmonious, flavorful masterpiece that exemplifies both simplicity and taste.</p>
+        <span id="shown2"></span>
+
+        <div id="more2">
         <h2>Recipe Ingredients</h2>
         <ul>
             <li>2 tablespoons of butter</li>
@@ -99,10 +108,13 @@
         </ol>
 
         <h3>Additional Food images</h3>
-        <img src="pastacooking.jpg" width = "200" alt="Pasta being lifted by a fork in a pot of boiling water. It is almost finished cooking. ">
-        <img src="shrimpscampicooking.jpg" width = "200" alt="Shrimp cooking in a sauce of butter and wine. It is being stirred with a spoon. ">
-        <img src="shrimpcooking.jpg" width = "200" alt="Shrimp is cooking until it is pink. Shrimp is almost finished cooking. ">
-
+        <div class = "recipegallery">
+        <img src="pastacooking.jpg" width = "200" class = "recipefirstchild" alt="Pasta being lifted by a fork in a pot of boiling water. It is almost finished cooking. ">
+        <img src="shrimpscampicooking.jpg" width = "200" class="recipesecondchild" alt="Shrimp cooking in a sauce of butter and wine. It is being stirred with a spoon. ">
+        <img src="shrimpcooking.jpg" width = "200" class="recipethirdchild" id="recipesthird" alt="Shrimp is cooking until it is pink. Shrimp is almost finished cooking. ">
+    </div>
+    </div>
+    <button onclick="myFunction2()" id="MyButton2">Read more</button>
         <!-- Anna Torell -->
     </div>
     <div>
@@ -113,6 +125,9 @@
 
         <img src="recipes1/images/tomato-egg-main-image.jpeg" width = "400" alt="Shrimp Scampi">
         <p>Tomato and eggs is a hot dish which originated from China. It is a simple and fast dish to make, but it has good nutritional value. It is a very satisfying food to eat and popularly served with rice and topped with green onions.</p>
+        <span id="shown3"></span>
+
+        <div id="more3">
         <h2>Recipe Ingredients</h2>
         <ul>
             <li>Tomatoes</li>
@@ -132,12 +147,16 @@
         </ol>
 
         <h3>Additional Food images</h3>
-        <img src="recipes1/images/tomato-egg-side1.jpeg" width = "200" alt="Tomato egg with rice.">
-        <img src="recipes1/images/tomatoes-cooking.webp" width = "200" alt="Tomatoes cooking on a pan.">
-        <img src="recipes1/images/scramble-eggs.jpeg" width = "200" alt="Scrambled eggs cooking on a pan.">
-
+        <div class = "recipegallery">
+        <img src="recipes1/images/tomato-egg-side1.jpeg" width = "200" class="recipefirstchild" alt="Tomato egg with rice.">
+        <img src="recipes1/images/tomatoes-cooking.webp" width = "200" class="recipesecondchild" alt="Tomatoes cooking on a pan.">
+        <img src="recipes1/images/scramble-eggs.jpeg" width = "200" class="recipethirdchild" id="recipesthird" alt="Scrambled eggs cooking on a pan.">
+    </div>
+    </div>
+    <button onclick="myFunction3()" id="MyButton3">Read more</button>
         <!-- Alex Ni -->
     </div>
     </main>
+    <script src="js/javascriptstyle.js"></script>
 </body>
 </html>
