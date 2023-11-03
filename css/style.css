@@ -219,6 +219,8 @@ main#main div {
     row-gap: 0px;
 }
 
+button {display: none;}
+
 @media screen and (min-width: 730px){
     nav li{
         display:inline;
