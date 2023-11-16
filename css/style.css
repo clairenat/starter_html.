@@ -448,3 +448,34 @@ button {display: none;}
         }
     }
 }   
+
+@media screen and (min-width: 1024px){
+    img {
+        opacity: 50%;
+        padding: 10px;
+    }
+    img:hover
+    {
+        opacity: 100%;
+        border-radius: 20px;
+    }
+    h1, h2, h3 {
+        font-family: Abril;
+    }
+    p {
+        font-family: Poppins;
+    }
+    
+    span {
+        font-family: Poppins;
+    }
+    
+    li {
+        font-family: Poppins;
+    }
+    figcaption {
+        font-family: Poppins;
+    }
+    
+
+}
