@@ -459,9 +459,6 @@ button {display: none;}
         opacity: 100%;
         border-radius: 20px;
     }
-    h1, h2, h3 {
-        font-family: Abril;
-    }
     p {
         font-family: Poppins;
     }
@@ -475,6 +472,13 @@ button {display: none;}
     }
     figcaption {
         font-family: Poppins;
+    }
+    @font-face {
+        font-family: Acme;
+        src: url(/fonts/Acme-Regular.ttf);
+      }
+      h1, h2, h3 {
+        font-family: Acme;
     }
     
 
