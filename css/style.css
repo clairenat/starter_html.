@@ -450,14 +450,17 @@ button {display: none;}
 }   
 
 @media screen and (min-width: 1024px){
-    img {
-        opacity: 50%;
-        padding: 10px;
-    }
-    img:hover
+
+    img.headimagerecipe
     {
         opacity: 100%;
-        border-radius: 20px;
+        -webkit-box-shadow: 10px 10px 5px 2px lightblue;
+        -moz-box-shadow: 10px 10px 5px 2px lightblue;
+        box-shadow: 10px 10px 5px 2px lightblue;
+    }
+    img:hover {
+        opacity: 50%;
+        padding: 20px;
     }
     p {
         font-family: Poppins;
@@ -486,6 +489,24 @@ button {display: none;}
         width: 8vw;
         opacity: 75%;
     }
+    img.icon:hover {
+        opacity: 75%;
+        padding: 0px;
+    }
     
+    .headimagerecipe {
+        border-radius: 20px;
+    }
+    nav {
+        text-align: right;
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+      .active {
+        background-color: #557373;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+    }
 
 }
