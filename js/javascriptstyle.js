@@ -119,4 +119,4 @@ function myFunction6() {
       }
     }
 
-    document.body.style.backgroundImage = "url('/whitebackground2.jpeg')";
+    //document.body.style.backgroundImage = "url('/whitebackground2.jpeg')";
