@@ -9,6 +9,12 @@
 html{
     scroll-behavior: smooth;
   }
+
+
+
+.nav1 {
+    display: none;
+}
   
   body{
     background-color: #d9d9d9;
@@ -524,6 +530,9 @@ button {display: none;}
 
     /*dropdown menu*/
     .navigation {
+        display: none;
+    }
+    .nav1 {
         text-align: right;
         width: 100%;
         display: grid;
@@ -549,7 +558,6 @@ button {display: none;}
     .dropdown {
         position: relative;
         display: inline-block;
-        padding-right: 200px;
     }
     .dropbtn:hover {
         opacity: 100%;
