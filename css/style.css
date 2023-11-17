@@ -525,7 +525,7 @@ button {display: none;}
         border-radius: 5px;
     }
     main {
-        background-image: url(/whitepattern3.jpeg);
+        background-image: url("../whitebackground2.jpeg");
     }
 
     /*dropdown menu*/
@@ -652,5 +652,16 @@ button {display: none;}
     }
     .dropdowncontent > a {
         font-family: Poppins;
+    }
+    .icon {
+        animation: rotation 2s infinite linear;
+    }
+    @keyframes icon {
+        from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(359deg);
+          }
     }
 }
