@@ -656,12 +656,17 @@ button {display: none;}
     .icon {
         animation: rotation 2s infinite linear;
     }
-    @keyframes icon {
+    @keyframes rotation {
         from {
             transform: rotate(0deg);
           }
           to {
             transform: rotate(359deg);
           }
+    }
+    @media screen and (prefers-reduced-motion: reduce){
+        .icon {
+            animation: none;
+        }
     }
 }
