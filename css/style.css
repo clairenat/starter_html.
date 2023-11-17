@@ -525,7 +525,7 @@ button {display: none;}
         border-radius: 5px;
     }
     main {
-        background-image: url("/whitebackground2.jpeg");
+        background-image: url(/whitebackground2.jpeg);
     }
 
     /*dropdown menu*/
@@ -620,6 +620,8 @@ button {display: none;}
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
         text-align: center;
+        margin-left: 250px;
+        margin-right: auto;
     }
 
     .dropdowncontent a {
@@ -627,6 +629,7 @@ button {display: none;}
         padding: 12px 16px;
         text-decoration: none;
         display: block;
+        text-align: center;
       }
 
     .dropdowncontent a:hover {background-color: #f1f1f1}
