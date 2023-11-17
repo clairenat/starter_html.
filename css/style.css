@@ -462,7 +462,7 @@ button {display: none;}
     }
 }   
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1280px){
 
     img.headimagerecipe
     {
@@ -620,9 +620,8 @@ button {display: none;}
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
         text-align: center;
-        /*margin-left: 250px;
-        margin-right: auto;*/
-        grid-column: 1;
+        margin-left: 200px;
+        margin-right: auto;
     }
     .dropdowncontent1 {
         display: none;
@@ -668,5 +667,111 @@ button {display: none;}
         .icon {
             animation: none;
         }
+    }
+    #dropdowncontent3 {
+        margin: auto;
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: 0.5fr 2fr 2fr 2fr 2fr 0.5fr;
+        grid-template-rows: 2fr;
+        gap: 0px;
+        margin: auto;
+    }
+    
+    .firstchild {
+        grid-column: 2;
+        grid-row: 1;
+        width: 22vw;
+        height: 22vw;
+        row-gap: 0px;
+    }
+    .secondchild {
+        grid-column: 3;
+        grid-row: 1;
+        width: 22vw;
+        height: 22vw;
+        row-gap: 0px;
+    }
+    .thirdchild {
+        grid-column: 4;
+        grid-row: 1;
+        width: 22vw;
+        height: 22vw;
+        row-gap: 0px;
+        margin-top: 16px;
+    }
+    .fourthchild {
+        grid-column: 5;
+        grid-row: 1;
+        width: 22vw;
+        height: 22vw;
+        row-gap: 0px;
+        margin-top: 16px;
+    }
+    .recipefirstchild {
+        grid-column: 2;
+        grid-row: 1;
+        width: 22vw;
+        height: 22vw;
+        row-gap: 0px;
+    }
+    .recipesecondchild {
+        grid-column: 3;
+        grid-row: 1;
+        width: 22vw;
+        height: 22vw;
+        row-gap: 0px;
+    }
+    .recipethirdchild {
+        grid-column: 4;
+        grid-row: 1;
+        width: 22vw;
+        height: 22vw;
+    }
+    .travelgallery {
+        display: grid;
+        grid-template-columns: 0.5fr 2fr 2fr 2fr 2fr 2fr 0.5fr;
+        grid-template-rows: 2fr;
+        gap: 0px;
+        margin-left: 20px;
+    }
+    .firsttravel {
+        grid-column: 2;
+        grid-row: 1;
+        height: 18vw;
+        width: 18vw;
+        row-gap: 0px;
+    }
+    .secondtravel {
+        grid-column: 3;
+        grid-row: 1;
+        height: 18vw;
+        width: 18vw;
+        row-gap: 0px;
+    }
+    .thirdtravel {
+        grid-column: 4;
+        grid-row: 1;
+        height: 18vw;
+        width: 18vw;
+        row-gap: 0px;
+    }
+    .fourthtravel {
+        grid-column: 5;
+        grid-row: 1;
+        height: 18vw;
+        width: 18vw;
+        row-gap: 0px;
+    }
+    .fifthtravel {
+        grid-column: 6;
+        grid-row: 1;
+        height: 18vw;
+        width: 18vw;
+        row-gap: 0px;
+    }
+    figcaption {
+        text-align: center;
     }
 }
