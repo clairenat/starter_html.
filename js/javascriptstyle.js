@@ -118,3 +118,5 @@ function myFunction6() {
         console.log("In read less")
       }
     }
+
+    document.body.style.backgroundImage = "url('/whitebackground2.jpeg')";

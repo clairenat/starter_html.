@@ -524,9 +524,9 @@ button {display: none;}
         padding: 10px;
         border-radius: 5px;
     }
-    main {
+    /*main {
         background-image: url(/whitebackground2.jpeg);
-    }
+    }*/
 
     /*dropdown menu*/
     .navigation {
