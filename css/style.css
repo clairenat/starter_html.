@@ -523,12 +523,28 @@ button {display: none;}
     }
 
     /*dropdown menu*/
+    .navigation {
+        text-align: right;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .drop1 {
+        grid-column: 1;
+    }
+    .drop2 {
+        grid-column: 2;
+    }
+    .drop3 {
+        grid-column: 3;
+    }
     .dropbtn {
         background-color: black;
         border: 0px;
         opacity: 75%;
         cursor: pointer;
-        /*padding-right: 120px;*/
+        padding-right: 0px;
+        display: inline-block;
     }
     .dropdown {
         position: relative;
@@ -539,7 +555,7 @@ button {display: none;}
         opacity: 100%;
         text-decoration: underline;
     }
-    #activerecipe {
+    /*#activerecipe {
         background-color: #557373;
         color: white;
         padding-top: 20px;
@@ -565,11 +581,24 @@ button {display: none;}
         padding-left: 10px;
         padding-right: 65px;
         border-radius: 5px;
+    }*/
+    #activerecipe {
+        background-color: #557373;
+        color: white;
+        text-decoration: wavy;
     }
-    .navigation {
-        text-align: right;
-        width: 100%;
+    #activepets {
+        background-color: #557373;
+        color: white;
+        text-decoration: solid;
     }
+    #activetravel {
+        background-color: #557373;
+        color: white;
+        text-decoration: solid;
+    }
+
+
     .dropbtn {
         display: inline-block;
         width: 10%;
