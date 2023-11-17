@@ -143,6 +143,9 @@ main#main div {
 #nongif {
     display: none;
 }
+img.icon {
+    display: none;
+}
 @media screen and (prefers-reduced-motion: reduce){
     html{
         scroll-behavior: auto; /* Removes scroll animation */
@@ -367,7 +370,7 @@ button {display: none;}
         padding-right: 30px;
         padding-left: 30px;
         text-align: center;
-        color: #d9d9d9;
+        color: white;
         background-color: #557373;
         font-size: 20px;
         margin-bottom: 10px;
@@ -461,6 +464,7 @@ button {display: none;}
     img:hover {
         opacity: 50%;
         padding: 20px;
+        background-color: cadetblue;
     }
     p {
         font-family: Poppins;
@@ -485,6 +489,7 @@ button {display: none;}
     }
 
     img.icon {
+        display: block;
         border: none;
         width: 8vw;
         opacity: 75%;
@@ -492,6 +497,7 @@ button {display: none;}
     img.icon:hover {
         opacity: 75%;
         padding: 0px;
+        background-color: grey;
     }
     
     .headimagerecipe {
@@ -508,5 +514,9 @@ button {display: none;}
         padding: 10px;
         border-radius: 5px;
     }
+    main {
+        background-image: url("/whitebackground2.jpeg");
+    }
+
 
 }
