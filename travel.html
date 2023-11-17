@@ -11,18 +11,55 @@
     <title>Travel</title>
 </head>
 <body>
-    <a href = "#main" id = "skip">Skip to Main Content</a>
+    <!---<a href = "#main" id = "skip">Skip to Main Content</a>
         <nav>
             <ul class="navigation">
                 <li><a href="index.html"> Pets</a></li>
                 <li><a href="travel.html" class="active"> Travel</a></li>
                 <li><a href="recipes.html"> Recipes</a></li>
             </ul>
-        </nav>
+        </nav>--->
+        <nav class="navigation">
+            <div class="dropdown">
+            <a href=index.html>
+                <button role="link" class="dropbtn"> Pets</button>
+            </a>
+            <div class="dropdowncontent">
+                <a href="index.html#cheetoh" >Cheetoh</a>
+                <a href="index.html#milktea" >Milktea</a>
+                <a href="index.html#leo" >Leo</a>
+                <a href="index.html#jax" >Jax</a>
+                <a href="index.html#Milo" >Milo</a>
+            </div>
+        </div>
+            <div class="dropdown">
+            <a href="travel.html">
+            <button role="link" class="dropbtn" id="activetravel"> Travel</button>
+            </a>
+            <div class="dropdowncontent">
+                <a href="travel.html#seoul">Seoul</a>
+                <a href="travel.html#dublin">Dublin</a>
+                <a href="travel.html#rome">Rome</a>
+                <a href="travel.html#nyc">nyc</a>
+                <a href="travel.html#auckland">Auckland</a>
+                <a href="travel.html#berlin">Berlin</a>
+            </div>
+            </div>
+            <div class="dropdown">
+            <a href="recipes.html">
+            <button role="link" class="dropbtn" href="recipes.html"> Recipes</button>
+            </a>
+            <div class="dropdowncontent">
+                <a href="recipes.html#matchacookies" >Matcha Cookies</a>
+                <a href="recipes.html#shrimpscampi" >Shrimp Scampi</a>
+                <a href="recipes.html#tomatoeggs" >Tomato and Eggs</a>
+            </div>
+            </div>
+    </nav>
 
    
     <main id = "main" onload="Buttons(this)">
-        <div>
+        <div id="seoul">
         <!--<div id="shown">-->
             <div class="header">
             <h1>Seoul</h1>
@@ -71,7 +108,7 @@
             <button onclick="myFunction()" id="MyButton">Read more</button>
             <!-- Claire Callen and Malwine Fischer-->
         </div>
-        <div>
+        <div id="dublin">
             <div class="header">
             <h1>Dublin</h1>
             <img class="icon" src="europe.png" alt="map of Europe icon">
@@ -118,7 +155,7 @@
             <button onclick="myFunction2()" id="MyButton2">Read more</button>
             <!--Dylan Geraghty-->
         </div>
-        <div>
+        <div id="rome">
             <div class="header">
             <h1>Rome</h1>
             <img class="icon" src="europe.png" alt="map of Europe icon">
@@ -165,7 +202,7 @@
             <button onclick="myFunction3()" id="MyButton3">Read more</button>
             <!--Iris Ding-->
         </div>
-        <div>
+        <div id="nyc">
             <div class="header">
             <h1>New York City</h1>
             <img class="icon" src="NorthAmericaicon.png" alt="map of North America icon">
@@ -212,9 +249,9 @@
             <button onclick="myFunction4()" id="MyButton4">Read more</button>
             <!--Prisha Agnihotri and Priya Shah-->
         </div>
-        <div>
+        <div id="auckland">
             <div class="header">
-            <h1>Auckland, New Zealand</h1>
+            <h1>Auckland</h1>
             <img class="icon" src="oceaniaicon.png" alt="map of Oceania icon">
             </div>
             <div class="recipeheadgrid">
@@ -259,7 +296,7 @@
             <button onclick="myFunction5()" id="MyButton5">Read more</button>
             <!--Satyak Khare-->
         </div>
-        <div>
+        <div id="berlin">
             <div class="header">
             <h1>Berlin</h1>
             <img class="icon" src="europe.png" alt="map of Europe icon">

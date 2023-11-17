@@ -12,17 +12,54 @@
 </head>
 <body>
     <a href = "#main" id = "skip">Skip to Main Content</a>
-        <nav>
+        <!---<nav>
             <ul class="navigation">
                 <li><a href="index.html"> Pets</a></li>
                 <li><a href="travel.html"> Travel</a></li>
                 <li><a href="recipes.html" class="active"> Recipes</a></li>
             </ul>
-        </nav>
+        </nav>--->
+        <nav class="navigation">
+            <div class="dropdown">
+                <a href=index.html>
+                    <button role="link" class="dropbtn"> Pets</button>
+                </a>
+                <div class="dropdowncontent">
+                    <a href="index.html#cheetoh" >Cheetoh</a>
+                    <a href="index.html#milktea" >Milktea</a>
+                    <a href="index.html#leo" >Leo</a>
+                    <a href="index.html#jax" >Jax</a>
+                    <a href="index.html#milo" >Milo</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="travel.html">
+                <button role="link" class="dropbtn"> Travel</button>
+                </a>
+                <div class="dropdowncontent">
+                    <a href="travel.html#seoul">Seoul</a>
+                    <a href="travel.html#dublin">Dublin</a>
+                    <a href="travel.html#rome">Rome</a>
+                    <a href="travel.html#nyc">nyc</a>
+                    <a href="travel.html#auckland">Auckland</a>
+                    <a href="travel.html#berlin">Berlin</a>
+                </div>
+                </div>
+            <div class="dropdown">
+            <a href="recipes.html">
+            <button role="link" class="dropbtn" id="activerecipe" href="recipes.html"> Recipes</button>
+            </a>
+            <div class="dropdowncontent">
+                <a href="recipes.html#matchacookies" >Matcha Cookies</a>
+                <a href="recipes.html#shrimpscampi" >Shrimp Scampi</a>
+                <a href="recipes.html#tomatoeggs" >Tomato and Eggs</a>
+            </div>
+            </div>
+    </nav>
 
    
     <main id = "main">
-    <div>
+    <div id="matchacookies">
         <div class="header">
         <h1>Matcha Cookies</h1>
         <img class="icon" src="cookieicon.png" alt="map of Asia icon">
@@ -77,7 +114,7 @@
         <!-- Emily Ma -->
 
     </div>
-    <div>
+    <div id="shrimpscampi">
         <div class="header">
         <h1>Shrimp Scampi</h1>
         <img class="icon" src="shrimpicon.png" alt="map of Asia icon">
@@ -127,7 +164,7 @@
     <button onclick="myFunction2()" id="MyButton2">Read more</button>
         <!-- Anna Torell -->
     </div>
-    <div>
+    <div id="tomatoeggs">
         <div class="header">
         <h1>Tomato and Eggs</h1>
         <img class="icon" src="eggicon.png" alt="map of Asia icon">
