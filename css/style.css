@@ -460,6 +460,9 @@ button {display: none;}
             animation: none;
         }
     }
+    .headprecipe2 {
+        grid-column: 1 / span 2;
+    }
 }   
 
 @media screen and (min-width: 1280px){
@@ -774,4 +777,72 @@ button {display: none;}
     figcaption {
         text-align: center;
     }
+    /*.recipeheadgrid { 
+        grid-template-columns: unset;
+    }*/
+    #main {
+        grid-template-columns: unset;
+    }
+    /*.desktopgrid {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        grid-template-rows: 2fr 2fr;
+        margin-top: 10px;
+    }
+    #maindesktopimage {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        height: 40vw;
+        width: 40vw;
+    }
+    #desktoptext1 {
+        text-align: left;
+        grid-column: 2;
+        grid-row: 1;
+    }
+    #desktoptext2 {
+        text-align: left;
+        grid-column: 2;
+        grid-row: 2;
+    }*/
+    .recipeheadgrid {
+        grid-template-columns: 3fr 2fr 2fr;
+        grid-template-rows:2fr;
+    }
+    .headimagerecipe {
+        grid-column: 1;
+        grid-row: 1;
+        width: 30vw;
+        height: 30vw;
+    }
+    .headprecipe {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    #desktoptext2 {
+        display: none;
+    }
+    .headprecipe2 {
+        display: block;
+        grid-column: 3;
+        grid-row: 1;
+    }
+    .extra {
+        grid-column: 3;
+        grid-row: 1;
+    }
+    button {
+        display: block;
+        margin: auto;
+    }
+    span {
+        margin-left: 40px;
+        padding-left: 40px;
+    }
+    .gridheading {
+        padding-left: 40px;
+        margin-left: 40px;
+    }
+
+
 }
