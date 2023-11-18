@@ -611,18 +611,18 @@ button {display: none;}
         border-radius: 5px;
     }*/
     #activerecipe {
-        background-color: #557373;
-        color: white;
+        background-color: #00ffff;
+        color: black;
         text-decoration: wavy;
     }
     #activepets {
-        background-color: #557373;
-        color: white;
+        background-color: #00ffff;
+        color: black;
         text-decoration: solid;
     }
     #activetravel {
-        background-color: #557373;
-        color: white;
+        background-color: #00ffff;
+        color: black;
         text-decoration: solid;
     }
 
